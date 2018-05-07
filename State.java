@@ -33,3 +33,12 @@ public class State {
 	private State(int id) {
 		this.id  = id;
 	}
+	
+	
+	public int getId() {
+		return id;
+	}
+	
+	public HashMap<String, Set<State>> getTransitions() {
+		return transitions;
+	}
