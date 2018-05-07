@@ -12,3 +12,8 @@ import java.util.Set;
  *
  */
 public class State {
+	
+	private String name;
+	private int id;
+	HashMap<String, Set<State>> transitions = new HashMap<String, Set<State>>();
+	private static int nextStateNum = 0;
