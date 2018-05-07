@@ -42,3 +42,16 @@ public class State {
 	public HashMap<String, Set<State>> getTransitions() {
 		return transitions;
 	}
+	
+	/**
+	 * Add a new transition from this state to another state on a given
+	 * input.
+	 * 
+	 * @param symbol input symbol of transition
+	 * @param toState next state of transition
+	 */
+	public void addTransition(String symbol, State toState) {
+		if(!transitions.containsKey(symbol))
+			transitions.put(symbol, new HashSet<State>());
+		transitions.get(symbol).add(toState);
+	}
