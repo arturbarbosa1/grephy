@@ -1,3 +1,14 @@
+
+/**
+   * file: State.java
+   * author: Artur Barbosa
+   * course: CMPT 440
+   * assignment: Grephy 
+   * due date: 5/7/2018
+   * Version 1
+   * 
+   * This file contains the State.java file for my grep project.
+   */
 package grephy;
 import java.util.ArrayList;
 import java.util.HashMap;
